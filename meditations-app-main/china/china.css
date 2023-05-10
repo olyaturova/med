@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#container-countdown {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    
+}
+
+#countdown {
+    display: none;
+    background-color: #C9EEFF;
+    font-size: 60px;
+    font-family: 'Gentium Plus', serif;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+#start {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+
+}
+
+  #btn-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: #C9EEFF;
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+  }
+
+  a {
+    color: black;
+  }
+
+  #timeChange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  #btnTwo {
+    width: 120px;
+    height: 35px;
+    font-size: 10px;
+  }
+
+  #duration {
+    display: none;
+  }
+
+  #btnTwo {
+    display: none;
+  }
+
+  #play {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #pause {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+
+/* АДАПТАЦИЯ */
+
+@media all and (max-width:500px) {
+  #myVideo {
+    top: -100px;
+    left: -550px;
+  }
+
+  #countdown {
+    font-size: 50px;
+    margin-top: 120px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+
+  button {
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    font-size: 20px;
+   
+  }
+
+}
+
+
+
+  @media all and (max-width:300px) {
+    #myVideo {
+      top: -350px;
+      right: 120px;
+    }
+  
+    #countdown {
+      font-size: 50px;
+      margin-top: 120px;
+      border-radius: 15px;
+      padding: 25px;
+  }
+  
+  
+    button {
+      width: 70px;
+      height: 50px;
+      border-radius: 8px;
+      padding: 8px;
+      margin: 8px;
+      font-size: 20px;
+     
+    }
+  
+  }
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Китайская традиционная музыка</title>
+    <link rel="stylesheet" href="china.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div id="container-countdown">
+            <p id="countdown"></p>
+        </div>
+
+        <div id="start">
+            <button id="play"><i class="fa fa-play"></i></button>
+            <button id="pause"><i class="fa fa-pause"></i></button>
+        </div>
+
+        <div id="btn-menu">
+            <!-- <a onclick="javascript:history.back(); return false;"><button id="arrow"><i class="fa fa-arrow-left"></i></button></a> -->
+            <a href="/index.html"><button id="arrow"><i class="fa fa-arrow-left"></i></button></a>
+            <button id="myButton"><i class="fa fa-music"></i></button>
+            <button id="repeat" onclick="location.reload();"><i class="fa fa-repeat"></i></button>
+            
+        </div>
+    </div>
+
+    
+
+    <div id="timeChange">
+        <button id="btn"><i class="fa fa-clock-o"></i></button>
+        <button id="btnTwo">установить время</button>
+        <select id="duration">
+            <option disabled>выбрать длительность</option>
+            <option value="1">1 минута</option>
+            <option value="3">3 минуты</option>
+            <option value="5">5 минут</option>
+            <option value="7">7 минут</option>
+            <option value="10">10 минут</option>
+            <option value="15">15 минут</option>
+        </select>
+    </div>
+
+    <audio id="myAudio" src="China traditional music.mp3" loop="loop" ></audio>
+
+    <video id="myVideo" autoplay="autoplay" loop="loop" muted defaultMuted playsinline>
+        <source src="purple-flowers-at-sunset-1080p.mp4" type="video/mp4">
+    </video>
+
+    <script src="china.js"></script>
+</body>
+</html>
